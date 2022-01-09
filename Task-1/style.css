@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  }
+  
+
+/* Landing Page */
+  .topnav-section {
+  overflow:hidden;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .topnav{
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    padding-left: 5%;
+  }
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 30px 15px;
+    display: block;
+    float:left;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    
+  }
+  .topnav a:active ,.topnav a:hover{
+    color: yellow;
+  }
+  .zippy{
+    color: white;
+    z-index: 1;
+    font-size: 32px !important;
+    margin-top: -10px;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase; 
+    
+  }
+  .zippy:hover{
+    color: white !important;
+    
+  }
+.slider-container {
+    max-width:1800px;
+    position: relative;
+    margin: auto;
+ }
+ .slider {
+    display: none
+  }
+  img {
+     background-size: 100% 100%;
+   }
+  .text {
+    color: #f2f2f2;
+    position: absolute;
+    top:30%;
+    left: 5.8%;
+    width: 100%;
+    text-align: left;
+    
+  }
+  
+  .btn{
+    padding: 10px 18px;
+    border-radius: 0%;
+    text-transform: uppercase;
+    background: #82589f;
+    color:white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .btn:hover{
+    background: yellow;
+    color: black;
+}
+  .slider-dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin-right:5px;
+    background-color: rgb(194, 194, 194); 
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot-position{
+    text-align: left;
+    margin-top: 125px;
+  }
+  .active, .slider-dot:hover {
+    background-color: gray;
+  }
+ @media screen and (max-width: 550px) {
+  .zippy{
+  font-size: 25px !important;
+  }
+  .topnav a{
+    font-size: 9px;
+  }
+ }
+
+
+/*  Welcome to Zippy */
+  .header-section{
+    margin-left: 18%;
+    margin-right: 18%;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    margin-bottom: 5%;
+  }
+  .header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .row-sec2{
+    margin: 0 -5px;
+  }
+  .row-sec2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column-sec2 {
+    float: left; 
+    width: 40%;
+    padding: 10px;
+    height: 160px;
+    margin-bottom: 100px;
+    margin-left: 40px;
+    word-wrap: break-word;
+  }
+  .column-sec2 p{
+    color:gray;
+    font-size: 20px;
+    margin-left:20px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .column-sec2 img{
+    float: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -15px;
+    max-width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 600px) {
+    .column-sec2 {
+      width: 100%;
+      margin: 0px;
+    }
+  }
+
+
+  .row {
+    margin: 0 -5px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 5%;
+  }
+  .card {
+    border: none;
+    outline: none;
+    padding: 16px;
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align: center;
+    margin-bottom: -15px;
+  }
+  .round-btn{
+    padding: 15px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border: none;
+    outline:none;
+    background:#82589f;
+    color: white;
+  }
+  .iconify{
+    width: 28px;
+    height: 28px;
+  }
+  .card h3{
+    text-transform: uppercase;
+    color: #82589f;
+    font-size: 15px;
+  }
+  .card p{
+    color:gray;
+    line-height: 1.6;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+
+/* Projects */
+  .project-section{
+    margin-bottom: 5%;
+    
+  }
+  .row-sec3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .row-sec3:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column-sec3 {
+    width: auto;
+    padding: 0 0px;
+    padding-bottom: 0%;
+    
+  }
+  .card-sec3{
+    background-color: #f2f2f2;
+  }
+  .img-sec3{
+    width: 25vw;
+    height: 30vw;
+  }
+  .container {
+    padding: 2px 50px;
+    color: black;
+  }
+  .card-sec3 h4{
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .card-sec3 p{
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .card-sec3:hover , .card-sec3:visited{
+    background: rgb(245, 245, 145);
+  }
+  .btn-sec3{
+    background: white;
+    color: black;
+  }
+  .btn-sec3:hover , .btn-sec3:visited{
+    background-color: #82589f;
+    color: white;
+  }
+@media screen and (max-width: 600px) {
+  .column-sec3 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/*Pricing Table*/
+
+#pricing-table {
+  position: absolute;
+  top: 312%;
+  width: 98.8vw;
+}
+.pricing-section{
+  margin-bottom: 5%;
+}
+.pricing-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pricing-list {
+  display: flex;
+  text-align: center;
+  margin-left: 18%;
+  margin-right: 18%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+.pricing-list span {
+  color: gray;
+  opacity: 0.8;
+}
+.pricing-list b {
+  font-weight: bold;
+}
+.pricing-list p {
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+#column-sec4 {
+  width: 25%;
+  padding: 0 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-bottom: 5%;
+}
+#side-line {
+  height: 100%;
+  width: 1.8%;
+  background-color: grey;
+  opacity: 0.3;
+  position: relative;
+  top: -100%;
+  left: 118%;
+}
+.btn-sec4{
+  padding: 8px 28px;
+  border-radius: 0%;
+  text-transform: uppercase;
+  background: #82589f;
+  color:white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-sec4:hover{
+  background: yellow;
+  color: black;
+}
+
+
+/*Video Projects*/
+
+  .video-section {
+    background-color: #82589f;
+    color:white;
+    padding-top: 1px;
+    padding-bottom: 5%;
+  }
+  .column-sec5 {
+    display: flex;
+  }
+ 
+
+
+/*Zippy Team*/
+
+  .team-section{
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+  .row-sec6 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .team{
+    position: relative;
+  }
+  .name{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    font-weight:bold;
+    margin-top: 25px;
+    font-size: 14px;
+  }
+  .position {
+    color: gray;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .image{
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .team:hover .image {
+    opacity: 0.8;
+    filter: grayscale(100%);
+  }
+  .facebook{
+    position: absolute;
+    text-align: center;
+    top: 23%;
+    left: 32%;
+    color: white;
+    opacity: 0;
+    height: 22px;
+  }
+  .twitter{
+    position: absolute;
+    height: 22px;
+    top:23%;
+    left:45%;
+    color: white;
+    opacity: 0;
+  }
+  .google{
+    position:absolute;
+    color: white;
+    top:23%;
+    left:58%;
+    opacity: 0;
+    height: 22px;
+  }
+  .team:hover .facebook{
+    opacity: 1;
+  }
+  .team:hover .twitter{
+    opacity: 1;
+  }
+  .team:hover .google{
+    opacity: 1;
+  }
+  
+
+
+/*Life in Zippy*/
+
+ .life-section{
+    background-color: #f2f2f2;
+    padding-top: 2px;
+    padding-bottom: 2%;
+  }
+  .life-image {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+  }
+  #mainimg{
+    width: 50%;
+  }
+  .lifeimage-gallery{
+    margin: auto;
+    height: auto;
+    max-width: 800px;
+    width: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4%;
+  }
+  .lifeimage{
+    object-fit: cover;
+    max-width: 130px;
+    max-height: 70px;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 5px;
+  }
+  .lifeimage:hover{
+	  opacity:1;
+    border: 2px solid black;
+  }
+  #lifeimg-gallery::-webkit-scrollbar {
+		display: none;
+  }
+@media screen and (max-width: 700px) {
+  #lifeimage-gallery{
+    max-width: 480px;
+  }
+  #mainimg{
+    width: 120px;;
+  }
+}
+
+
+/*Newsletter signup*/
+.newsletter-section {
+  text-align: center;
+}
+.newsletter-section .header{
+  padding-top: 5%;
+  color: white;
+  font-weight: 500;
+  font-weight: bold;
+}
+.row-sec8{
+  align-content: center;
+  margin: 0 -5px;
+}
+.row-sec8:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1-sec8 {
+  float: left; 
+  width: 60%;
+  height:100px;
+  text-align: right;
+}
+.column2-sec8 {
+  float: left; 
+  width: 20%;
+  height:100px;
+  text-align: left;
+}
+.bg-image {
+  background-image: url("https://images.hdqwalls.com/wallpapers/bridge-cityscape-landscape-vv.jpg");
+  height: 330px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.center{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+input[type=text]{
+  width: 42%;
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+.btn-sec8{
+  padding: 15px 22px;
+  border-radius: 0%;
+  text-transform: uppercase;
+  background: yellow;
+  color:black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-sec8:hover{
+  background: #82589f;
+  color: black;
+}
+
+
+/*Blog*/
+  .blog-section{
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: 5%;
+  }
+  .blog-section .header{
+    padding-top: 5%;
+    color:black;
+    font-weight: 500;
+    font-weight: bold;
+  }
+  .blog-section img{
+    width:100%;
+    margin-top: 1%;
+  }
+  .blog-section h3{
+    color: black;
+    margin-top: 25px;
+  }
+  .blog-section card p{
+    font-weight: bold;
+  }
+  .blog-section button{
+    background-color: #f2f2f2;
+    color: black;
+  }
+
+
+/*Contact*/
+  .contact-section{
+    margin-bottom: 5%;
+    background-color: rgb(240, 224, 134);
+  }
+  .container-sec10 {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .row-sec10{
+    margin: -10px;
+    height: 550px;
+    border-radius: 0%;
+  }
+  .column1-sec10 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    margin: -20px;
+    text-align: left;
+  }
+  .column2-sec10{
+    padding-left: 40px;
+  }
+  .contact-section label{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .container-sec10 input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border: none;
+    outline: none;
+  }  
+  .container-sec10 input[type=submit] {
+    background-color: #82589f;
+    width: 100%;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .container-sec10 input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+
+@media screen and (max-width: 600px) {
+  .contact-section{
+    background-color: white;
+  }
+  .row-sec10{
+    margin-left: 10%;
+  }
+  .column1-sec10{
+    background-color: rgb(240, 224, 134);
+    margin: -2%;
+    padding-left: 5%;
+    margin-left: -5%;
+  }
+  .column1-sec10, input[type=submit] {
+    width: 100%;
+    margin-top: -5%;
+  }
+}
+
+
+/*Footer*/
+ 
+  .card-footer h3, .card-footer p{
+    color: black;
+    font-size: 12px; 
+  }
+  .icon{
+    justify-content: center;
+    margin: 8px 12px;
+    width:20px;
+    height: 20px;
+  }
+  .icon:hover{
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+
+
+  /*ISHWAR MHASE*/
