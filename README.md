@@ -5,6 +5,8 @@ This is a single-page website source code that contains HTML, CSS, and Javascrip
 
 ## Task-1 Demo
 
+https://lgmvip-web-task1.vercel.app/
+
 
 
 # Task-2
@@ -12,6 +14,10 @@ This is a single-page website source code that contains HTML, CSS, and Javascrip
 This is React App source code made for LGMVIP WebDev.
 
 ## Task-2 Demo
+
+https://lgmvip-web-task2.vercel.app/
+
+
 
 ## 🔗 Links
 
